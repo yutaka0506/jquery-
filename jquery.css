@@ -1,4 +1,4 @@
-
+/*body部分*/
 body {
   margin: 0;
   font-weight: 400;
@@ -45,7 +45,14 @@ ul {
 div {
   display: block;
 }
-
+.center-txt {
+  color: #555;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+/*bodyの終わり*/
+/*ヘッダー*/
 .header-left{
   float:left;
   padding:0px 20px;
@@ -76,6 +83,8 @@ ul{
 .chart li:hover{
   color:#0DC0C0;
 }
+/*ヘッダーの終わり*/
+/*トップタイトル*/
 .top-wrapper{
   background-image:url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/top.jpg");
   background-size:cover;
@@ -127,12 +136,9 @@ ul{
   cursor: pointer;
   transition: all .3s;
 }
-.center-txt {
-  color: #555;
-  padding-top: 60px;
-  padding-bottom: 10px;
-  text-align: center;
-}
+/*トップタイトルの終わり*/
+/*学習する言語*/
+
 h2{
   color:#555;
   font-size:30px;
@@ -141,21 +147,26 @@ h2{
   padding-top:30px;
   width:100%;
   text-align:center;
+  height: 600px;
+  box-sizing: border-box;
 }
 .word-box{
-  width:34%;
+  /*width:34%;*/
   display:inline-block;
-  text-align:center;
-  padding-bottom:40px;
+  /*text-align:center;*/
+  /*padding-bottom:40px;*/
+  vertical-align: top;
+  width: 38%;
+  padding: 20px;
+  height: 180px;
 }
-.word-box h3{
-  padding-bottom:20px;
-}
-.hove {
+
+/*.word-box h3{
+  padding-bottom:5px;
+}*/
+.text {
   display: none;
-}
-.hove-active {
-  display: block;
+  padding:20px;
 }
 
 
@@ -165,6 +176,9 @@ h3{
 h4{
   color:#888;
 }
+/*学習する言語の終わり*/
+
+/*特徴*/
 .top-contents{
   background-color:white;
   height:800px;
@@ -203,6 +217,9 @@ h4{
   float:left;
   vertical-align: top;
 }
+/*特徴の終わり*/
+
+/*コースの選択*/
 .top-course{
   height:800px;
  background-color:#f4f4f4;
@@ -258,6 +275,9 @@ h4{
   margin-top:40px;
   margin-bottom:30px;
 }
+/*コースの選択の終わり*/
+
+/*メンターの紹介*/
 
 .top-menter{
   text-align:center;
@@ -283,6 +303,9 @@ p {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
+/*メンターの紹介の終わり*/
+
+/*facebookの言葉*/
 .message-top{
   background-image:url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/night_view.jpg);
   background-size:cover;
@@ -305,6 +328,9 @@ p {
   color:white;
   font-size:20px;
 }
+/*facebookの言葉の終わり*/
+
+/*コラム*/
 .coram{
   text-align:center;
   background-color:#f4f4f4;
@@ -359,6 +385,10 @@ p {
   margin:0px 520px;
   padding:15px 20px;
 }
+/*コラムの終わり*/
+
+
+/*お問い合わせ*/
 .top-form{
   background-image:url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/contact.jpg");
   background-size:cover;
@@ -442,7 +472,10 @@ line-height: 24px;
 .tvn{
   padding:5px;
 }
+/*お問い合わせの終わり*/
 
+
+/*フッター*/
 footer{
   background-color:#222;
 }
@@ -452,3 +485,4 @@ footer{
   text-align:center;
   color: #999;
 }
+/*フッターの終わり*/
