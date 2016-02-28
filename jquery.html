@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Progate School</title>
+    <!-- css -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
     <link rel="stylesheet" href="jquery.css">
+    <!-- jquery -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
+    <!-- bxslider -->
+    <script src="/jquery.bxslider.min.js"></script>
+    <link href="/jquery.bxslider.css" rel="stylesheet" />
+
   </head>
   <body>
   <!-- ヘッダー -->
@@ -209,58 +215,58 @@
     </div>
   <!-- facebookの終わり -->
   <!-- コラム -->
-    <div class="coram">
+    <div class="coram-top">
       <div >
         <div class="container">
           <div class="center-txt">
             <h2>コラム</h2>
           </div>
-          <div class="coram-task">
-            <div class="film-icon blue-icon">show all</div>
-            <div class="film-icon">コラム</div>
-            <div class="film-icon">プログラミングTips</div>
+          <div class="coram-task" id="tags">
+            <div class="film-icon blue-icon" id="show">show all</div>
+            <div class="film-icon" id="column">コラム</div>
+            <div class="film-icon" id='tips'>プログラミングTips</div>
           </div>
-          <div class="coram-box-wrapper">
-            <div class="coram-box">
-              <div class="icon">
-              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/programmer.jpg">
+          <div class="coram-box-wrapper" id="all">
+            <div class="coram-box coram-text">
+              <div class="icon coram-text">
+              <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/programmer.jpg" >
               </div>
-              <h3>20代のエンジニアが初めての転職でつまずきやすい点</h3>
+              <a class="coram-title">20代のエンジニアが初めての転職でつまずきやすい点</a>
               <h4>コラム</h4>
             </div>
-            <div class="coram-box">
-             <div class="icon">
-              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/html5.jpg">
+            <div class="coram-box tip-coram">
+             <div class="icon tip-coram">
+              <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/html5.jpg">
              </div>
-              <h3>HTML5の新タグについて</h3>
+              <a class="coram-title">HTML5の新タグについて</a>
               <h4>HTML</h4>
             </div>
-            <div class="coram-box">
-              <div class="icon">
-            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/js.jpg">
+            <div class="coram-box tip-coram">
+              <div class="icon tip-coram">
+            <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/js.jpg">
               </div>
-              <h3>Javascriptの文法まとめ</h3>
+              <a class="coram-title">Javascriptの文法まとめ</a>
               <h4>Javascript</h4>
             </div>
-            <div class="coram-box">
-              <div class="icon">
-              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/books.jpg" alt>
+            <div class="coram-box coram-text">
+              <div class="icon coram-text">
+              <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/books.jpg">
               </div>
-              <h3>新卒ソフトウェアエンジニアのための技術書100冊</h3>
+              <a class="coram-title">新卒ソフトウェアエンジニアのための技術書100冊</a>
               <h4>コラム</h4>
             </div>
-            <div class="coram-box">
-              <div class="icon">
-              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/engineer.jpg">
+            <div class="coram-box coram-text">
+              <div class="icon coram-text">
+              <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/engineer.jpg">
               </div>
-              <h3>「プレイヤーでも年収1000万円に」エンジニアの評価制度</h3>
+              <a class="coram-title">「プレイヤーでも年収1000万円に」エンジニアの評価制度</a>
               <h4>コラム</h4>
             </div>
-            <div class="coram-box">
-              <div class="icon">
-              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/inspect.jpg">
+            <div class="coram-box tip-coram">
+              <div class="icon tip-coram">
+              <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/inspect.jpg">
               </div>
-              <h3>要素の検証をしてみよう</h3>
+              <a class="coram-title">要素の検証をしてみよう</a>
               <h4>CSS</h4>
             </div>
             <div class="loadmore">

@@ -1,5 +1,5 @@
 $(function(){
-	// console.log("test")
+	// // console.log("test")
  //   // #で始まるアンカーをクリックした場合に処理
  //   $('a[href^=#]').click(function() {
  //      // スクロールの速度
@@ -15,7 +15,7 @@ $(function(){
  //      return false;
  //   });
 
- // 学習する言
+ // トップタイトル
  $('#more').click(
  	function(){
  		var $more = $('#more')
@@ -30,19 +30,63 @@ $(function(){
  			$(this).find('span').text('閉じる');
  		}
  	});
+// トップタイトルの終わり
 
+ // コラム
+ $(function(){
+ 	$('#tags div').click(function(){
+ 		// attrの意味が良くわからない　ネットから引用
+ 		var tags = $(this).attr('id');
+ 		$('#tags div').removeClass('select');
+ 		$(this).addClass('select')
+ 		$('#all div').hide();
+ 		// (tags == ????)の部分もネットから引用
+ 		if(tags == 'column'){
+ 			$('#all .coram-text').fadeIn('slow');
+ 			$('#column').addClass('blue-icon');
+ 			$('#show').removeClass('blue-icon');
+ 			$('#tips').removeClass('blue-icon');
+ 		}else if(tags == 'tips'){
+ 		    $('#all .tip-coram').fadeIn('slow');
+ 		    $('#tips').addClass('blue-icon'); 
+ 		    $('#show').removeClass('blue-icon');
+ 		    $('#column').removeClass('blue-icon');
+ 		}else{
+ 			$('#all div').fadeIn('slow');
+ 			$('#show').addClass('blue-icon');
+ 			$('#column').removeClass('blue-icon');
+ 			$('#tips').removeClass('blue-icon');
+ 		}
+ 	});
+ });
 
+ $('.scale').hover(
+ 	function(){
+ 		var $scale = $('.scale')
+ 		if($scale.hasClass('zoom')){
+ 			$(this).hover($scale).addClass('zoom');
+ 		}else{
+ 			$(this).hover($scale).removeClass('zoom');
+ 		}
 
+ 	});
+// コラムの終わり
 
+// 学習する言語
  $('.word-box-hover').hover(
  	function() {
  		$(this).find('.text').fadeIn();
- },
+ 	},
     function(){
  	    $(this).find('.text').fadeOut();
- }
+ 	});
+ // 学習言語の終わり
 
-
- );
-
+// ヘッダーの部分（作成中）
+// bxsliderの使い方がいまいち分からない
+ $(document).ready(
+ 	function(){
+ 		$('.menter-list').bxSlider();
+});
+ // ヘッダーの終わり
 });
