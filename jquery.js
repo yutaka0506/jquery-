@@ -14,6 +14,26 @@ $(function(){
  //      $('body,html').animate({scrollTop:position}, speed, 'swing');
  //      return false;
  //   });
+
+ // 学習する言
+ $('#more').click(
+ 	function(){
+ 		var $more = $('#more')
+ 		var $moretext = $('.more-txt')
+ 		if($more.hasClass('open')){
+ 			$more.removeClass('open');
+ 			$moretext.fadeOut();
+ 			$(this).find('span').text('もっと詳しく');
+ 		}else{
+ 			$more.addClass('open');
+ 			$moretext.fadeIn();
+ 			$(this).find('span').text('閉じる');
+ 		}
+ 	});
+
+
+
+
  $('.word-box-hover').hover(
  	function() {
  		$(this).find('.text').fadeIn();
