@@ -59,7 +59,7 @@ $(function(){
  		}
  	});
  });
-
+// コラム画像
  $('.scale').hover(
  	function(){
  		var $scale = $('.scale')
