@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Progate School</title>
     <!-- css -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
     <link rel="stylesheet" href="jquery.css">
     <!-- jquery -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
-    <!-- bxslider -->
-    <script src="/jquery.bxslider.min.js"></script>
-    <link href="/jquery.bxslider.css" rel="stylesheet" />
+    <!-- 下線消す -->
 
   </head>
   <body>
@@ -21,14 +20,14 @@
     <header>
       <div class="container">
         <div class="header-top">
-        <div class="header-left"　href="#1">Progate School</div>
+        <div class="header-left"><a href="#1">Progate School</a></div>
         <div class="header-right">
           <ul>
-            <li class="chart" href="#2">学習言語</li>
-            <li class="chart" href="#3">特徴</li>
-            <li class="chart" href="#4">料金</li>
-            <li class="chart" href="#5">コラム</li>
-            <li class="chart" href="#6">お問い合わせ</li>
+            <li class="chart"><a href="#2">学習言語</a></li>
+            <li class="chart"><a href="#3">特徴</a></li>
+            <li class="chart"><a href="#4">料金</a></li>
+            <li class="chart"><a href="#5">コラム</a></li>
+            <li class="chart"><a href="#6">お問い合わせ</a></li>
           </ul>
         </div>
       </div>
@@ -64,31 +63,39 @@
           <div class="word-box-wrapper">
             <div class="word-box word-box-hover">
               <div class="aicon">
-              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/html.png">
+               <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/html.png">
               </div>
-              <h3>HTML＆CSS</h3>
-              <h4 class="text">Webページの見た目をつくる言語</h4>
+              <div class="box-text">
+               <h3>HTML＆CSS</h3>
+               <p class="text">Webページの見た目をつくる言語</p>
+              </div>
             </div>
             <div class="word-box word-box-hover">
              <div class="aicon">
               <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/js.png">
              </div>
+             <div class="box-text">
               <h3>Javascript</h3>
-              <h4 class="text">動的なウェブサイト構築に用いるプログラミング言語</h4>
+              <p class="text">動的なウェブサイト構築に用いるプログラミング言語</p>
+             </div>
             </div>
             <div class="word-box word-box-hover">
               <div class="aicon">
             <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/jquery.png">
               </div>
-              <h3>jQuery</h3>
-              <h4 class="text">効果やアニメーションを実装できるJavascriptライブラリ</h4>
+              <div class="box-text">
+               <h3>jQuery</h3>
+               <p class="text">効果やアニメーションを実装できるJavascriptライブラリ</p>
+              </div>
             </div>
             <div class="word-box word-box-hover">
               <div class="aicon">
               <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/git.png">
               </div>
-              <h3>Git</h3>
-              <h4 class="text">ソースコードのバージョン管理、共同開発を可能にするツール</h4>
+              <div class="box-text">
+               <h3>Git</h3>
+               <p class="text">ソースコードのバージョン管理、共同開発を可能にするツール</p>
+              </div>
             </div>
           </div>
         </div>
@@ -128,7 +135,7 @@
     </div>
   <!-- 特徴の終わり -->
   <!-- コースの選択 -->
-    <div class="top-course" href="#4">
+    <div class="top-course" id="4">
       <div class="course">
         <div class="">
           <div class="container">
@@ -142,8 +149,8 @@
                 <li>期間:2週間</li>
                 <li>チャットでの質問 : ◯</li>
                 <li>オフィスでの質問 : ◯</li>
+                <li><div class="btn pricing" id="login-1">申し込む</div></li>
               </ul>
-              <p>申し込む</p>
             </div>
             <div class="courses normal">
               <h2>通常１ヶ月コース</h2>
@@ -152,8 +159,8 @@
                 <li>期間:1週間</li>
                 <li>チャットでの質問 : ◯</li>
                 <li>オフィスでの質問 : ◯</li>
+                <li><div class="btn pricing" id="login-2">申し込む</div></li>
               </ul>
-              <p>申し込む</p>
             </div>
             <div class="courses holiday">
               <h2>土日開発2ヶ月コース</h2>
@@ -162,40 +169,70 @@
                 <li>期間:2ヶ月</li>
                 <li>チャットでの質問 : ◯</li>
                 <li>オフィスでの質問 : ◯</li>
+                <li><div class="btn pricing" id="login-3">申し込む</div></li>
               </ul>
-              <p>申し込む</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   <!-- コースの選択の終わり -->
+  <!-- modal -->
+   <div id="course-modal" class="course-modal-wrapper">
+     <div class="modal">
+       <div id="close-modal"></div>
+       <div id="apply-form">
+        <div id="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+         <h2>各種に申し込む</h2>
+         <form>
+           <select id="course-select" name="course">
+              <option value="1">短期集中2週間コース</option>
+              <option value="2">通常1ヶ月コース</option>
+              <option value="3">土日開発2ヶ月コース</option>
+           </select>
+           <input type="text" name="name" placeholder="氏名" class="sign-name">
+           <input type="text" name="mail" placeholder="メールアドレス" class="sign-mail">
+           <textarea name="essay" placeholder="志望理由"></textarea>
+           <div class="apply-show" id="submit-btn">確認画面へ</div>
+         </form>
+       </div>
+     </div>
+   </div>
+   <!-- modalの終わり -->
   <!-- メンター紹介 -->
-    <div class="top-menter" href="#5">
+    <div class="top-menter" >
       <div class="menter">
         <div>
           <div class="container">
             <div class="center-txt">
               <h2>メンター紹介</h2>
             </div>
-            <div class="menter-list">
-              <div class="menter-men">
+              <div id="carousel_menters" class="carousel slide" data-ride="carousel" data-interval="1500">
+              <ol class="carousel-indicators">
+              <li data-target="#carousel_menters" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel_menters" data-slide-to="1" class=""></li>
+              <li data-target="#carousel_menters" data-slide-to="2" class=""></li>
+              </ol>
+              <div class="carousel-inner">
+               <div class="item menter-men active">
                 <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_1.jpg" class="menter-img">
                 <h3>プログラミングサークルでの活動や受託を通じてスキルを磨く。その後は複数のスタートアップに協力しながらプログラミングを教えるようになり、これをオンラインのサービスとして提供したいと思い、2014年7月に株式会社Progateを創業、現代表取締役。</h3>
                 <p>-加藤将倫</p>
-              </div>
-              <div class="menter-men">
+               </div>
+               <div class="item menter-men">
                 <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_2.jpg" class="menter-img">
                 <h3>３年生の秋にエンジニアを集めるために東大プログラミングサークル「ZEROXONE」をたちあげる。自分の人生はプログラミングを身につけたことによって劇的に変わりました。みんなにも同じ体験をしてもらいたくてProgateを作っています！</h3>
                 <p>-村井謙太</p>
-              </div>
-              <div class="menter-men">
+               </div>
+               <div class="item menter-men">
                 <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_3.jpg" class="menter-img">
                 <h3>ProgateではUI/UXを担当。ユーザーに夢中で楽しんでもらえるようなサービス設計、学びによって人生を豊かにできるようなサービスを目指し、日々プロダクト改善に取り組んでいる。テクノロジー・デザイン・ビジネスの分野で、領域横断的に活動し、人々がワクワクして止まないモノを生み出せる人間で在りたいと思う。</h3>
                 <p>-神田美智</p>
+               </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
@@ -215,7 +252,7 @@
     </div>
   <!-- facebookの終わり -->
   <!-- コラム -->
-    <div class="coram-top">
+    <div class="coram-top" id="5">
       <div >
         <div class="container">
           <div class="center-txt">
@@ -227,58 +264,68 @@
             <div class="film-icon" id='tips'>プログラミングTips</div>
           </div>
           <div class="coram-box-wrapper" id="all">
-            <div class="coram-box coram-text">
-              <div class="icon coram-text">
-              <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/programmer.jpg" >
+            <div class="coram-box coram-text allcorams">
+            <a href="#">
+              <div class="icon image coram-text allcorams" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/programmer.jpg)">
+                <div class="zoom-black"></div>
               </div>
+            </a>
               <a class="coram-title">20代のエンジニアが初めての転職でつまずきやすい点</a>
               <h4>コラム</h4>
             </div>
-            <div class="coram-box tip-coram">
-             <div class="icon tip-coram">
-              <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/html5.jpg">
-             </div>
+            <div class="coram-box tip-coram allcorams">
+            <a href="">
+              <div class="icon image tip-coram allcorams" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/html5.jpg)">
+              <div class="zoom-black"></div>
+              </div>
+            </a>
               <a class="coram-title">HTML5の新タグについて</a>
               <h4>HTML</h4>
             </div>
-            <div class="coram-box tip-coram">
-              <div class="icon tip-coram">
-            <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/js.jpg">
+            <div class="coram-box tip-coram allcorams">
+            <a href="">
+              <div class="icon image tip-coram allcorams" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/js.jpg)">
+              <div class="zoom-black"></div>
               </div>
+            </a>
               <a class="coram-title">Javascriptの文法まとめ</a>
               <h4>Javascript</h4>
             </div>
-            <div class="coram-box coram-text">
-              <div class="icon coram-text">
-              <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/books.jpg">
+            <div class="coram-box coram-text allcorams">
+            <a href="">
+            <div class="icon image coram-text allcorams" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/books.jpg)">
+            <div class="zoom-black"></div>
               </div>
+            </a>
               <a class="coram-title">新卒ソフトウェアエンジニアのための技術書100冊</a>
               <h4>コラム</h4>
             </div>
-            <div class="coram-box coram-text">
-              <div class="icon coram-text">
-              <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/engineer.jpg">
+            <div class="coram-box coram-text allcorams">
+            <a href="">
+              <div class="icon image coram-text allcorams" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/engineer.jpg)">
+              <div class="zoom-black"></div>
               </div>
+            </a>
               <a class="coram-title">「プレイヤーでも年収1000万円に」エンジニアの評価制度</a>
               <h4>コラム</h4>
             </div>
-            <div class="coram-box tip-coram">
-              <div class="icon tip-coram">
-              <img id="scale" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/inspect.jpg">
+            <div class="coram-box tip-coram allcorams">
+            <a href="">
+              <div class="icon image tip-coram allcorams" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/inspect.jpg)">
+              <div class="zoom-black"></div>
               </div>
+            </a>
               <a class="coram-title">要素の検証をしてみよう</a>
               <h4>CSS</h4>
             </div>
-            <div class="loadmore">
-              <div>Load More</div>
-            </div>
+              <div class="btn coram-text tip-coram allcorams">Load More</div>
           </div>
         </div>
       </div>
     </div>
   <!-- コラムの終わり   -->
   <!-- お問い合わせ -->
-    <div class="top-form">
+    <div class="top-form" id="6">
       <div class="form">
         <div>
           <div class="container">
@@ -288,14 +335,15 @@
             <div cass="top-about">
             <div class="section">
               <h4>メッセージを送る</h4>
-              <form>
-            <div class="send-message"><h5>Email</h5></div>
-            <div class="send-message"><h5>Subject</h5></div>
-            <div class="send-message messages"><h5>Message</h5></div>
+              <form id="form" method="post">
+            <div class="error-message"></div>
+            <input type="text" name="email" placeholder="Email" class="send-email">
+            <div class="error-message"></div>
+            <input type="text" name="subject" placeholder="Subject" class="send-message">
+            <div class="error-message"></div>
+            <textarea name="message" placeholder="Message" ></textarea>
+            <button type="submit" class="btn submit">Submit</button>
               </form>
-              <div class="submit">
-              <h4>Submit</h4>
-              </div>
             </div>
             <div class="form-about">
               <h5>Abust Us</h5>
@@ -336,5 +384,8 @@
       </div>
     </footer>
     <!-- フッターの終わり -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
